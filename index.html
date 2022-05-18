@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fce89f26f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="card" action="#">
+            <div class="card-header">
+                <!-- Form Header-->
+                <h2>Payment form example</h2>
+            </div>
+            <div class="row card-body card-body">
+                <!-- Credit Card Information-->
+                <div class="col-sm-5">
+                    <label class="form-label" for="Card Number">Card #</label>
+                    <input type="number" class="form-control" placeholder="XXXXXXXXXXXX" id="Card Number" required>
+                </div>
+                <div class="col-sm-3">
+                    <label class="form-label" for="CVC Number">CVC #</label>
+                    <input type="number" class="form-control" placeholder="0000" id="CVC Number" required>
+                </div>
+                <div class="col-sm-4">
+                    <label class="form-label" for="Amount">Amount</label>
+                    <input type="number" class="form-control" placeholder="Amount" id="Amount" required>
+                </div>
+            </div>
+            <div class="row card-body">
+                <!-- Name Field-->
+                <div class="col-sm-6">
+                    <label class="form-label" for="First Name">First Name</label>
+                    <input type="text" class="form-control" id="First Name" required>
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label" for="Last Name">Last Name</label>
+                    <input type="text" class="form-control" id="Last Name" required>
+                </div>
+            </div>
+            <div class="row card-body">
+                <!-- Billing Address Field -->
+                <div class="col-sm-6">
+                    <label class="form-label" for="City">City</label>
+                    <input type="text" class="form-control" id="City" required>
+                </div>
+                <div class="col-sm-3">
+                    <label class="form-label" for="inputState">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Pick a state</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <label class="form-label" for="Postal Code">Postal Code</label>
+                    <input type="number" class="form-control" placeholder=" " id="Postal Code" required>
+                </div>
+            </div>
+            <div class="row card-body">
+                <!-- Message -->
+                <div class="col-sm-6">
+                    <!--PLACEHOLDER-->
+                    <label class="form-label" for="">We Accept:</label>
+                    <div class="card d-flex flex-row justify-content-between bg-secondary w-25 p-1" >
+                        <p><input type="radio" name="cc-type" value="mastercard" /><i class="fa-brands fa-cc-mastercard"></i></p>
+                        <p><input type="radio" name="cc-type" value="visa" /><i class="fa-brands fa-cc-visa"></i></p>
+                        <p><input type="radio" name="cc-type" value="diners-club" /><i class="fa-brands fa-cc-diners-club"></i></p>
+                        <p><input type="radio" name="cc-type" value="cc-amex" /><i class="fa-brands fa-cc-amex"></i></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" name="message" id="message" cols="6" rows="3"></textarea>
+                    <p>Add any notes here.</p>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-end">
+                <!--FOOTER-->
+                <button type="submit" class="btn btn-secondary ms-auto me-1">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
